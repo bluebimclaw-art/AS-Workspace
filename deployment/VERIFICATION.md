@@ -1,24 +1,18 @@
-# Export verification and restore boundary
+# Public preview verification
 
-## Actual execution
-- Isolated export from the running0.11.0 application; no git initialization or copy writes inside the live app/data directories.
-- Fresh dependency install in the export only: npm ci --ignore-scripts --no-audit --no-fund returned0 (316 packages). Dependency audit/upgrades were not requested or performed.
-- Source/snapshot restore: scripts/restore-deployed-frontend.py executed against a fresh exported checkout. All781 files matched stored SHA256, public editor assets restored, no server/data initialization.
-- Canonical npm test after restore:132 passed,0 failed,0 skipped, exit0.
-- Worker unittest discover:17 passed after changing ONLY exported fixture references to fixtures/native-teapot.png. This fixture is a previously generated non-sensitive red teapot, not company data. No new image inference occurred.
-- Snapshot ZIP CRC verified, every extracted file matched the frontend manifest.
-- Export application sources were compared by SHA256 to formal sources when copied; worker runtime sources came from installed worker. Test suites were taken from the latest reviewed combined navigation/image staging; two worker test path references were normalized only in this export.
-- Current normal published entry remains index-nav-902a12da0676fdb9.js. Rebuilding current source can publish the deferred Explorer UI; preserve the Release snapshot for exact deployed UI.
+## Public distribution changes, not a production deployment
+- Original private ZIP is retained locally, with its SHA256 in `original-production-archive.json`; it is not an asset to expose publicly.
+- The public preview removes three exact ArtCraft SVG data spans from PDFCraft WASM, replacing each with a valid transparent SVG padded to the identical byte length. Reverse reconstruction proves every byte outside these spans is unchanged. An unrelated-byte mutation is explicitly rejected.
+- All four public WebAssembly modules pass Node/V8 structural validation. All234 public fonts parse;233 unchanged fonts match upstream Excalidraw0.18.1 Git blobs. Public-only Liberation Sans is now2.1.5 with official OFL-1.1 materials.
+- Original781 private-snapshot files and live production frontend files were rehashed and remain unchanged. No live app/data/env/service was edited or restarted.
+- Fifty upstream license/NOTICE/font/attribution files,9 font-family notices/copyrights,256 npm package license entries and existing Canvas notices accompany the public ZIP.
 
-## Secret/data policy
-Allowlist copied source/technical markdown/template configuration only. All environment locals/backups, model locals, TLS material, node_modules, data/accounts/sessions/databases, logs, evidence/screenshots, native runtime binaries and OAuth/service credentials were excluded from Git. Pattern scanning and exact known-live-secret comparisons apply to selected Git content and full uncompressed frontend snapshot; findings contain no values. Generic pattern hits in vendor binaries/chunks were reviewed as substrings inside longer alphanumeric/static-symbol data and token-boundary constraints were added; no live-secret matches were found. This is a scoped verification, not a guarantee against every possible encoded or unknown credential. Do not switch visibility to public.
+## Actual isolated execution
+- A fresh cloned public checkout installed316 packages with `npm ci --ignore-scripts --no-audit --no-fund`.
+- The new861-file public ZIP passed CRC and every extracted SHA256. `restore-deployed-frontend.py` actually restored it in that fresh checkout and verified all861 files, without starting a server or initializing any company data.
+- Canonical `npm run test`:132passed,0failed,0skipped, exit0.
+- Worker unittest discovery:17passed, exit0. Tests use the included non-sensitive synthetic/pre-existing fixture; no real image/model generation or company document submission occurs.
+- Final uncompressed-public-tree secret scan and remote/anonymous repository+release verification are performed separately before publishing success is reported.
 
-## Acceptance limits
-No new browser login/company document/image generation was run during this export. Historical14 navigation browser checks used actual served JS with synthetic editor/API messages, not native Office-WASM document persistence. Native runtime tools, company data and credentials require separate local provisioning. This Git/Release export is NOT a full machine or business-data backup.
-
-## Re-run after a fresh clone
-Download the attached Private Release frontend ZIP, then follow README restore steps. For Worker regression:
-```
-python -m unittest discover -s integrations/codex-image-worker -p 'test_*.py' -v
-```
-Do not run a smoke command that generates new images merely to verify this backup; it consumes subscription allowance.
+## Limits
+This is a public-preview packaging/provenance and structural-verification result, not a legal opinion, trademark permission, full native Office-WASM editing/save/reopen/download E2E acceptance, production deployment, company data backup, dependency-vulnerability audit, or promise that rebuilding current source exactly reproduces the frontend. Do not redeploy the public variant onto the running company system without separate review.

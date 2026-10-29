@@ -1,5 +1,5 @@
 {
-  "scope": "Byte-exact deployed dist, NOT source rebuild",
+  "variant": "public-preview-not-production-identical",
   "files": [
     {
       "file": "dist/assets/abnfDiagram-VCTEODGH-BVs7tHwI.js",
@@ -2593,8 +2593,8 @@
     },
     {
       "file": "dist/excalidraw-assets/fonts/Liberation/LiberationSans-Regular.woff2",
-      "bytes": 70668,
-      "sha256": "006a2b28cbbeeaec937d1b367d0949f5f48ef4b2e7b4e1d8dc7a799d2d639be8"
+      "bytes": 146984,
+      "sha256": "ce8967e491ccc921995a5446a1b13d1f357a609034b4fe56840da2b5e845a252"
     },
     {
       "file": "dist/excalidraw-assets/fonts/Lilita/Lilita-Regular-i7dPIFZ9Zz-WBtRtedDbYE98RXi4EwSsbg.woff2",
@@ -3834,17 +3834,17 @@
     {
       "file": "dist/office/pdfcraft-web-0.13.0-cjk1/pdfcraft-web-9ee0e273e4651b56_bg.wasm",
       "bytes": 62576830,
-      "sha256": "dd64839518534bb56ad4013234e12a5b086fd8aabe303e73e923e71696984947"
+      "sha256": "0d5c1ad1a0856bff3faa643472d92f10032af6b290c362899f17e215657e54d0"
     },
     {
       "file": "dist/office/pdfcraft-web-0.13.0-cjk1/pdfcraft-web-9ee0e273e4651b56_bg.wasm.gz",
-      "bytes": 27521321,
-      "sha256": "83d518278f7429c8cd417e0837b179a3854bb9352b815dcfbe2a059de4347d08"
+      "bytes": 27473048,
+      "sha256": "11c1eccb894b9510734abd0058156dbc15acfe765db4a72bea4d371efabce55e"
     },
     {
       "file": "dist/office/pdfcraft-web-0.13.0-cjk1/platform-build.json",
-      "bytes": 1349,
-      "sha256": "9d52aa0a190d471d4f938bf6ae569a0770be9a5e986078529f985115e890b635"
+      "bytes": 1374,
+      "sha256": "945696f919fb50d62f9695a099ad8aa17656d6733102a6b550751adc3fc7249e"
     },
     {
       "file": "dist/office/wordcraft-web-0.10.0-host1/biz-ud-pgothic-OFL.txt",
@@ -3905,6 +3905,406 @@
       "file": "dist/office/wordcraft-web-0.10.0-host1/wordcraft-web-f5007a88881c8b32.js.gz",
       "bytes": 23881,
       "sha256": "53a1fb30af5448a4b6bb626e03a841546d5547c10ba26c7d8e04a26d691cef39"
+    },
+    {
+      "file": "dist/third-party/ADDITIONAL_SOURCES.json",
+      "bytes": 8587,
+      "sha256": "7848402a88b5c05f716b3e8b0109505623de5ba0cff3ded7a13bffc410244d78"
+    },
+    {
+      "file": "dist/third-party/deckcraft/LICENSE-APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "file": "dist/third-party/deckcraft/LICENSE-brand.txt",
+      "bytes": 2263,
+      "sha256": "c5ad8e77d0dd8939161b4c4eca7aaba2437d6340c29e7809fa4679f0f2a82f62"
+    },
+    {
+      "file": "dist/third-party/deckcraft/LICENSE-MIT",
+      "bytes": 1101,
+      "sha256": "90e96fef569474cd526350e716e4b05dd32f179ca96d39d61e6b928485e35406"
+    },
+    {
+      "file": "dist/third-party/deckcraft/upstream/ATTRIBUTION.md",
+      "bytes": 9855,
+      "sha256": "2c132af8d257c4dcd8f1872864de5ba0086f0c2be07d074029515d3cb2c9b386"
+    },
+    {
+      "file": "dist/third-party/deckcraft/upstream/docs/brand/LICENSE-brand.txt",
+      "bytes": 2263,
+      "sha256": "c5ad8e77d0dd8939161b4c4eca7aaba2437d6340c29e7809fa4679f0f2a82f62"
+    },
+    {
+      "file": "dist/third-party/deckcraft/upstream/LICENSE-APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "file": "dist/third-party/deckcraft/upstream/LICENSE-MIT",
+      "bytes": 1101,
+      "sha256": "90e96fef569474cd526350e716e4b05dd32f179ca96d39d61e6b928485e35406"
+    },
+    {
+      "file": "dist/third-party/deckcraft/upstream/licenses/pdf-writer/LICENSE-ICC.txt",
+      "bytes": 6552,
+      "sha256": "469d87b5fa48f8aaf69e25f4fcac3a309c97dbb7d561b917638abdb640e004d9"
+    },
+    {
+      "file": "dist/third-party/deckcraft/upstream/NOTICE",
+      "bytes": 4672,
+      "sha256": "e1a258c4eaf704ef7bc0592784ca3b406144d35fd0f5a045c84ae55e0f1bb6e0"
+    },
+    {
+      "file": "dist/third-party/excalidraw/LICENSE",
+      "bytes": 1067,
+      "sha256": "1352d204fdb90d5e482c13139d848bc2c9300a9a7de358a0a558a23e72d0d8be"
+    },
+    {
+      "file": "dist/third-party/fonts/Assistant-OFL.txt",
+      "bytes": 4613,
+      "sha256": "7eaf6282cfab122b99ffd62a122fc27b6c3c8f2c65b56ff9b3a25badbc64887d"
+    },
+    {
+      "file": "dist/third-party/fonts/Cascadia-LICENSE.txt",
+      "bytes": 4489,
+      "sha256": "51882cd3cdba4e16f220f44ddb08a635c38c44ea6e0975db2574f4be6f958238"
+    },
+    {
+      "file": "dist/third-party/fonts/ComicShanns-upstream-notice.txt",
+      "bytes": 2919,
+      "sha256": "599a5bef44586503ecbe89850e695e9de986307ef4ced4332728619f8b9f9718"
+    },
+    {
+      "file": "dist/third-party/fonts/EMBEDDED_COPYRIGHTS.json",
+      "bytes": 2288,
+      "sha256": "870663badc5570c6daa4d5b6d657d644773dc0e2fe4061d60ee52233815ca760"
+    },
+    {
+      "file": "dist/third-party/fonts/Excalifont-upstream-notice.txt",
+      "bytes": 5370,
+      "sha256": "463155f8b57907fd961f32d4941f590e3c037325c34fac94118c03ca3b67eabe"
+    },
+    {
+      "file": "dist/third-party/fonts/Liberation-2.1.5-LICENSE.txt",
+      "bytes": 4414,
+      "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
+    },
+    {
+      "file": "dist/third-party/fonts/Lilita-OFL.txt",
+      "bytes": 4392,
+      "sha256": "255d5debbb80eb2ea762644311f266a279e8778f00156655a516e2b7781a63e1"
+    },
+    {
+      "file": "dist/third-party/fonts/Nunito-OFL.txt",
+      "bytes": 4385,
+      "sha256": "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65"
+    },
+    {
+      "file": "dist/third-party/fonts/OFL-1.1.txt",
+      "bytes": 4154,
+      "sha256": "cfd30289ff074c22b04ab24e584c7bb38a478e598ea1814c84138d091605e0e2"
+    },
+    {
+      "file": "dist/third-party/fonts/Virgil-OFL.txt",
+      "bytes": 4460,
+      "sha256": "e2d8244e3369c99cb696f3e8ca75c41fa5d5de59073867bb6047fee906bae1b3"
+    },
+    {
+      "file": "dist/third-party/fonts/Xiaolai-upstream-notice.txt",
+      "bytes": 1096,
+      "sha256": "91b596a07331c438dabd2a66783eb818b9ac1ff9ee4069f008021f6f044fddb7"
+    },
+    {
+      "file": "dist/third-party/gridcraft/LICENSE-APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "file": "dist/third-party/gridcraft/LICENSE-brand.txt",
+      "bytes": 2263,
+      "sha256": "d60f1608b31dde193c34e4afb5d922d2c700ead06c4bb3735959334a09b1ff2c"
+    },
+    {
+      "file": "dist/third-party/gridcraft/LICENSE-MIT",
+      "bytes": 1101,
+      "sha256": "a87109bbb1ad43ca3920a5d7ff3806863b7e8470a73f4ded97a1447ac93333f5"
+    },
+    {
+      "file": "dist/third-party/gridcraft/upstream/assets/app-icon/LICENSE.txt",
+      "bytes": 577,
+      "sha256": "9596de48b5e42fbf727c924bb3863f0e28fcd9e38c47cca284e1174bd06481ce"
+    },
+    {
+      "file": "dist/third-party/gridcraft/upstream/ATTRIBUTION.md",
+      "bytes": 8370,
+      "sha256": "56b465eebb50e1b424c33291119529e45c8636b806d4432199ba7d57bc555c50"
+    },
+    {
+      "file": "dist/third-party/gridcraft/upstream/docs/brand/LICENSE-brand.txt",
+      "bytes": 2263,
+      "sha256": "d60f1608b31dde193c34e4afb5d922d2c700ead06c4bb3735959334a09b1ff2c"
+    },
+    {
+      "file": "dist/third-party/gridcraft/upstream/LICENSE-APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "file": "dist/third-party/gridcraft/upstream/LICENSE-MIT",
+      "bytes": 1101,
+      "sha256": "a87109bbb1ad43ca3920a5d7ff3806863b7e8470a73f4ded97a1447ac93333f5"
+    },
+    {
+      "file": "dist/third-party/gridcraft/upstream/NOTICE",
+      "bytes": 742,
+      "sha256": "7c948d5b56639a6d53c362ce0b54a79badd6f272c542f0fc0f22e9ec31c61c2b"
+    },
+    {
+      "file": "dist/third-party/HOST_NPM_NOTICES.txt",
+      "bytes": 731493,
+      "sha256": "6ea4cd2283da27a93838797cb9fca3130c39610af22839cef85b427d8980daa9"
+    },
+    {
+      "file": "dist/third-party/infinite-canvas/LICENSE",
+      "bytes": 1088,
+      "sha256": "44e52203e61565877cc4685791343679f19c49f7b28288a2d0b9f7b9aced8009"
+    },
+    {
+      "file": "dist/third-party/infinite-canvas/THIRD_PARTY_NOTICES.txt",
+      "bytes": 2750480,
+      "sha256": "c618758af21b91ae21e14cd6668664e0f5072903e7fcb45d5deae4cecbef7b49"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/LICENSE-APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/LICENSE-brand.txt",
+      "bytes": 2256,
+      "sha256": "0f33f48e7a96cd359d4e4e5b11424b13cebeb59cc70c77928186695e4173585c"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/LICENSE-MIT",
+      "bytes": 1100,
+      "sha256": "cd7032ea33b71427f188e34ffb4aee9d6868a57fd196037c5c8b2be03a2a0352"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/assets/app-icon/LICENSE-document.txt",
+      "bytes": 1580,
+      "sha256": "64a3137e3d5cc41e5b78d2ad8dd9ddddd6588283f9f7b3128aa6a8a50852fb9a"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/assets/app-icon/LICENSE.txt",
+      "bytes": 555,
+      "sha256": "b768acafe6cbad8247eedf86b5b5381feefcd4ee0f8c7808b86811bc687cf37b"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/assets/fonts/OFL-DancingScript.txt",
+      "bytes": 4443,
+      "sha256": "6f090277c00af96651ce6dbcc38ff1591047a3bffef486e80b6a32e8276a8201"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/assets/fonts/OFL-Inter.txt",
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/assets/fonts/OFL-JetBrainsMono.txt",
+      "bytes": 4399,
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/assets/icons/LICENSE-lucide.txt",
+      "bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/ATTRIBUTION.md",
+      "bytes": 98696,
+      "sha256": "8fbe44de64eb03c1f5cbd467d28028f671c8670277ffa5de23dc24b1ee55624f"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/docs/brand/LICENSE-brand.txt",
+      "bytes": 2256,
+      "sha256": "0f33f48e7a96cd359d4e4e5b11424b13cebeb59cc70c77928186695e4173585c"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/LICENSE-APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/LICENSE-MIT",
+      "bytes": 1100,
+      "sha256": "cd7032ea33b71427f188e34ffb4aee9d6868a57fd196037c5c8b2be03a2a0352"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/NOTICE",
+      "bytes": 4184,
+      "sha256": "496946cff190a3fec32fe0241ea60d40539c73a9da1865073eb0c73ee822c8d5"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/egui-wgpu/LICENSE-APACHE",
+      "bytes": 10850,
+      "sha256": "8173d5c29b4f956d532781d2b86e4e30f83e6b7878dce18c919451d6ba707c90"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/egui-wgpu/LICENSE-MIT",
+      "bytes": 1092,
+      "sha256": "95ca92f5f8ea5231f1580b3a2a799e8260af3114b900e1def5355a7f44bcf60c"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro/LICENSE-APACHE",
+      "bytes": 10173,
+      "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro/LICENSE-MIT",
+      "bytes": 1063,
+      "sha256": "51b50e6120c344dcc146bbd6375ca1c78e079d97c8bea76e67a53d6ff0efebac"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-cmap/assets/LICENSE.txt",
+      "bytes": 1453,
+      "sha256": "742665db9c8e1bc72603c6d319ca3e90b83bd6d95202f0cd4ef11068a07a9c29"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-cmap/LICENSE-APACHE",
+      "bytes": 10173,
+      "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-cmap/LICENSE-MIT",
+      "bytes": 1063,
+      "sha256": "51b50e6120c344dcc146bbd6375ca1c78e079d97c8bea76e67a53d6ff0efebac"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-interpret/assets/LICENSE_FOXIT",
+      "bytes": 1553,
+      "sha256": "b578cdd2345840ada550bd12519533812320d5f1d21cf4c1c7e1b1b0a31c98b7"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-interpret/LICENSE-APACHE",
+      "bytes": 10173,
+      "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-interpret/LICENSE-MIT",
+      "bytes": 1063,
+      "sha256": "51b50e6120c344dcc146bbd6375ca1c78e079d97c8bea76e67a53d6ff0efebac"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-jbig2/LICENSE-APACHE",
+      "bytes": 10173,
+      "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-jbig2/LICENSE-MIT",
+      "bytes": 1063,
+      "sha256": "51b50e6120c344dcc146bbd6375ca1c78e079d97c8bea76e67a53d6ff0efebac"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-syntax/LICENSE-APACHE",
+      "bytes": 10173,
+      "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/hayro-syntax/LICENSE-MIT",
+      "bytes": 1063,
+      "sha256": "51b50e6120c344dcc146bbd6375ca1c78e079d97c8bea76e67a53d6ff0efebac"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/lopdf/LICENSE",
+      "bytes": 1068,
+      "sha256": "2fb01e6708ea9d53e8b7e74bd82af23bce5256f19f4de93915027a53173c50d8"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/vello_common/LICENSE-APACHE",
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/vello_common/LICENSE-MIT",
+      "bytes": 1057,
+      "sha256": "adf157330f722fe7cfd5964a2a6974eff851b718228c6735724a11706e6f4dec"
+    },
+    {
+      "file": "dist/third-party/pdfcraft/upstream/vendor/winit/LICENSE",
+      "bytes": 11323,
+      "sha256": "6dc0e068dcf3a5bc8e054205b85b7720e1d49265bbc64bf515d2cf79197df69a"
+    },
+    {
+      "file": "dist/third-party/SOURCES.json",
+      "bytes": 5006,
+      "sha256": "6e85d3527e806a8f03fd323feea38f786f25907f228920a1bbd7ad7b5b8c3c63"
+    },
+    {
+      "file": "dist/third-party/wordcraft/LICENSE-APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "file": "dist/third-party/wordcraft/LICENSE-brand.txt",
+      "bytes": 2263,
+      "sha256": "ed4475eacf972c9584aa335001c59dfa646eb222549b928ffd6aefd4c805b41a"
+    },
+    {
+      "file": "dist/third-party/wordcraft/LICENSE-MIT",
+      "bytes": 1101,
+      "sha256": "fc257de83c44ae49e4aad1cf777b886794be3ac9c8d00c010ef55935d5bbeba5"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/assets/fonts/OFL-Inter.txt",
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/assets/fonts/OFL-JetBrainsMono.txt",
+      "bytes": 4399,
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/assets/fonts/OFL-SourceSans3.txt",
+      "bytes": 4486,
+      "sha256": "56af9b9c6715597e458284a474dc118a50a4150e9d547c70f7b4a33c3e6a9328"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/assets/fonts/OFL-SourceSerif4.txt",
+      "bytes": 4491,
+      "sha256": "c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/ATTRIBUTION.md",
+      "bytes": 21917,
+      "sha256": "e940199b20319d06c05adc6e7f497b34f7a23bdba89ef1027593f16709831691"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/docs/brand/LICENSE-brand.txt",
+      "bytes": 2263,
+      "sha256": "ed4475eacf972c9584aa335001c59dfa646eb222549b928ffd6aefd4c805b41a"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/LICENSE-APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/LICENSE-MIT",
+      "bytes": 1101,
+      "sha256": "fc257de83c44ae49e4aad1cf777b886794be3ac9c8d00c010ef55935d5bbeba5"
+    },
+    {
+      "file": "dist/third-party/wordcraft/upstream/NOTICE",
+      "bytes": 7489,
+      "sha256": "77a6916ab20608b0cdf3b8f991fdd8724752a83ced01fbf0545b169138d17831"
+    },
+    {
+      "file": "dist/THIRD_PARTY.md",
+      "bytes": 3059,
+      "sha256": "0830989c208fdd53b1610fe9babaaf97b95e0df544b65aae2db46e38fdd28c47"
     }
   ]
 }

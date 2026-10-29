@@ -1,4 +1,4 @@
-"""Restore the verified private-release frontend into a fresh checkout only.
+"""Restore the verified release frontend into a fresh checkout only.
 No model calls, credentials, accounts, database initialization or server startup.
 """
 from pathlib import Path,PurePosixPath

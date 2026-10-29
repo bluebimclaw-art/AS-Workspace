@@ -1,0 +1,202 @@
+[
+  {
+    "file": "wordcraft/upstream/ATTRIBUTION.md",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/ATTRIBUTION.md"
+  },
+  {
+    "file": "wordcraft/upstream/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/LICENSE-APACHE"
+  },
+  {
+    "file": "wordcraft/upstream/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/LICENSE-MIT"
+  },
+  {
+    "file": "wordcraft/upstream/NOTICE",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/NOTICE"
+  },
+  {
+    "file": "wordcraft/upstream/assets/fonts/OFL-Inter.txt",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/assets/fonts/OFL-Inter.txt"
+  },
+  {
+    "file": "wordcraft/upstream/assets/fonts/OFL-JetBrainsMono.txt",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/assets/fonts/OFL-JetBrainsMono.txt"
+  },
+  {
+    "file": "wordcraft/upstream/assets/fonts/OFL-SourceSans3.txt",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/assets/fonts/OFL-SourceSans3.txt"
+  },
+  {
+    "file": "wordcraft/upstream/assets/fonts/OFL-SourceSerif4.txt",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/assets/fonts/OFL-SourceSerif4.txt"
+  },
+  {
+    "file": "wordcraft/upstream/docs/brand/LICENSE-brand.txt",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/docs/brand/LICENSE-brand.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/ATTRIBUTION.md",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/ATTRIBUTION.md"
+  },
+  {
+    "file": "pdfcraft/upstream/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/LICENSE-APACHE"
+  },
+  {
+    "file": "pdfcraft/upstream/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/LICENSE-MIT"
+  },
+  {
+    "file": "pdfcraft/upstream/NOTICE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/NOTICE"
+  },
+  {
+    "file": "pdfcraft/upstream/assets/app-icon/LICENSE-document.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/assets/app-icon/LICENSE-document.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/assets/app-icon/LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/assets/app-icon/LICENSE.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/assets/fonts/OFL-DancingScript.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/assets/fonts/OFL-DancingScript.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/assets/fonts/OFL-Inter.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/assets/fonts/OFL-Inter.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/assets/fonts/OFL-JetBrainsMono.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/assets/fonts/OFL-JetBrainsMono.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/assets/icons/LICENSE-lucide.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/assets/icons/LICENSE-lucide.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/docs/brand/LICENSE-brand.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/docs/brand/LICENSE-brand.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/egui-wgpu/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/egui-wgpu/LICENSE-APACHE"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/egui-wgpu/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/egui-wgpu/LICENSE-MIT"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-cmap/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-cmap/LICENSE-APACHE"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-cmap/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-cmap/LICENSE-MIT"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-cmap/assets/LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-cmap/assets/LICENSE.txt"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-interpret/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-interpret/LICENSE-APACHE"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-interpret/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-interpret/LICENSE-MIT"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-interpret/assets/LICENSE_FOXIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-interpret/assets/LICENSE_FOXIT"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-jbig2/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-jbig2/LICENSE-APACHE"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-jbig2/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-jbig2/LICENSE-MIT"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-syntax/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-syntax/LICENSE-APACHE"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro-syntax/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro-syntax/LICENSE-MIT"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro/LICENSE-APACHE"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/hayro/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/hayro/LICENSE-MIT"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/lopdf/LICENSE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/lopdf/LICENSE"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/vello_common/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/vello_common/LICENSE-APACHE"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/vello_common/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/vello_common/LICENSE-MIT"
+  },
+  {
+    "file": "pdfcraft/upstream/vendor/winit/LICENSE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/vendor/winit/LICENSE"
+  },
+  {
+    "file": "deckcraft/upstream/ATTRIBUTION.md",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/ATTRIBUTION.md"
+  },
+  {
+    "file": "deckcraft/upstream/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/LICENSE-APACHE"
+  },
+  {
+    "file": "deckcraft/upstream/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/LICENSE-MIT"
+  },
+  {
+    "file": "deckcraft/upstream/NOTICE",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/NOTICE"
+  },
+  {
+    "file": "deckcraft/upstream/docs/brand/LICENSE-brand.txt",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/docs/brand/LICENSE-brand.txt"
+  },
+  {
+    "file": "deckcraft/upstream/licenses/pdf-writer/LICENSE-ICC.txt",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/licenses/pdf-writer/LICENSE-ICC.txt"
+  },
+  {
+    "file": "gridcraft/upstream/ATTRIBUTION.md",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/ATTRIBUTION.md"
+  },
+  {
+    "file": "gridcraft/upstream/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/LICENSE-APACHE"
+  },
+  {
+    "file": "gridcraft/upstream/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/LICENSE-MIT"
+  },
+  {
+    "file": "gridcraft/upstream/NOTICE",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/NOTICE"
+  },
+  {
+    "file": "gridcraft/upstream/assets/app-icon/LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/assets/app-icon/LICENSE.txt"
+  },
+  {
+    "file": "gridcraft/upstream/docs/brand/LICENSE-brand.txt",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/docs/brand/LICENSE-brand.txt"
+  }
+]

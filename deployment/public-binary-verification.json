@@ -1,0 +1,30 @@
+{
+  "wasmPreservationProofs": [
+    {
+      "file": "dist/office/pdfcraft-web-0.13.0-cjk1/pdfcraft-web-9ee0e273e4651b56_bg.wasm",
+      "exactProtectedBytePreservation": "passed",
+      "changedAssetSpans": [
+        {
+          "offset": 61498440,
+          "length": 5394,
+          "originalSha256": "3188971e1affdf4f6be4fa65f715376a7a305e6aa741ec78b0296c8f934eff08"
+        },
+        {
+          "offset": 61503859,
+          "length": 5394,
+          "originalSha256": "a3e03dc49f9ad4225b8517d5424309c8d1c864d3996d862190d9cc797d5af427"
+        },
+        {
+          "offset": 61509309,
+          "length": 341,
+          "originalSha256": "f87af81b6fa411da8820eed2bfdcc54c0ee9cd453b4e868c64f56c69db142d0e"
+        }
+      ],
+      "mutationCounterexample": "rejected"
+    }
+  ],
+  "wasmModulesValidated": 4,
+  "allPublicFontsParsed": 234,
+  "originalPrivateAndLiveFrontendFilesUnchanged": 781,
+  "limits": "Structural WASM/font validation and exact asset-span preservation, not complete native editor interaction/save/download E2E or a legal warranty."
+}

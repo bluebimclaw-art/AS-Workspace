@@ -1,0 +1,40 @@
+{
+  "publicVariantNotByteIdenticalToProduction": true,
+  "productionAndOriginalPrivateSnapshotUntouched": true,
+  "wasmChanges": [
+    {
+      "file": "dist/office/pdfcraft-web-0.13.0-cjk1/pdfcraft-web-9ee0e273e4651b56_bg.wasm",
+      "before": "dd64839518534bb56ad4013234e12a5b086fd8aabe303e73e923e71696984947",
+      "after": "0d5c1ad1a0856bff3faa643472d92f10032af6b290c362899f17e215657e54d0",
+      "removed": [
+        {
+          "asset": "artcraft-logo.svg",
+          "occurrences": 1,
+          "assetSha256": "3188971e1affdf4f6be4fa65f715376a7a305e6aa741ec78b0296c8f934eff08"
+        },
+        {
+          "asset": "artcraft-logo-white.svg",
+          "occurrences": 1,
+          "assetSha256": "a3e03dc49f9ad4225b8517d5424309c8d1c864d3996d862190d9cc797d5af427"
+        },
+        {
+          "asset": "artcraft-mark.svg",
+          "occurrences": 1,
+          "assetSha256": "f87af81b6fa411da8820eed2bfdcc54c0ee9cd453b4e868c64f56c69db142d0e"
+        }
+      ],
+      "sameByteLength": true
+    }
+  ],
+  "fontReplacement": {
+    "family": "Liberation Sans",
+    "from": "1.05",
+    "to": "2.1.5",
+    "license": "OFL-1.1",
+    "source": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz"
+  },
+  "unchangedFontsVerifiedAgainstPinnedUpstreamGitBlobs": 233,
+  "upstreamBrandAssetVariantsChecked": 8,
+  "bundledNpmLicenseEntries": 256,
+  "legalScope": "Technical attribution/provenance checks only; no blanket legal warranty or license grant for ArtCraft trademarks."
+}

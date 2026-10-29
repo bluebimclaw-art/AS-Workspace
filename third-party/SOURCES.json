@@ -1,0 +1,108 @@
+[
+  {
+    "file": "wordcraft/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/LICENSE-MIT",
+    "sha256": "fc257de83c44ae49e4aad1cf777b886794be3ac9c8d00c010ef55935d5bbeba5"
+  },
+  {
+    "file": "wordcraft/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/LICENSE-APACHE",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+  },
+  {
+    "file": "wordcraft/LICENSE-brand.txt",
+    "url": "https://raw.githubusercontent.com/storytold/wordcraft/v0.10.0/docs/brand/LICENSE-brand.txt",
+    "sha256": "ed4475eacf972c9584aa335001c59dfa646eb222549b928ffd6aefd4c805b41a"
+  },
+  {
+    "file": "pdfcraft/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/LICENSE-MIT",
+    "sha256": "cd7032ea33b71427f188e34ffb4aee9d6868a57fd196037c5c8b2be03a2a0352"
+  },
+  {
+    "file": "pdfcraft/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/LICENSE-APACHE",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+  },
+  {
+    "file": "pdfcraft/LICENSE-brand.txt",
+    "url": "https://raw.githubusercontent.com/storytold/pdfcraft/v0.13.0/docs/brand/LICENSE-brand.txt",
+    "sha256": "0f33f48e7a96cd359d4e4e5b11424b13cebeb59cc70c77928186695e4173585c"
+  },
+  {
+    "file": "deckcraft/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/LICENSE-MIT",
+    "sha256": "90e96fef569474cd526350e716e4b05dd32f179ca96d39d61e6b928485e35406"
+  },
+  {
+    "file": "deckcraft/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/LICENSE-APACHE",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+  },
+  {
+    "file": "deckcraft/LICENSE-brand.txt",
+    "url": "https://raw.githubusercontent.com/storytold/deckcraft/v0.10.0/docs/brand/LICENSE-brand.txt",
+    "sha256": "c5ad8e77d0dd8939161b4c4eca7aaba2437d6340c29e7809fa4679f0f2a82f62"
+  },
+  {
+    "file": "gridcraft/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/LICENSE-MIT",
+    "sha256": "a87109bbb1ad43ca3920a5d7ff3806863b7e8470a73f4ded97a1447ac93333f5"
+  },
+  {
+    "file": "gridcraft/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/LICENSE-APACHE",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+  },
+  {
+    "file": "gridcraft/LICENSE-brand.txt",
+    "url": "https://raw.githubusercontent.com/storytold/gridcraft/v0.11.1/docs/brand/LICENSE-brand.txt",
+    "sha256": "d60f1608b31dde193c34e4afb5d922d2c700ead06c4bb3735959334a09b1ff2c"
+  },
+  {
+    "file": "excalidraw/LICENSE",
+    "url": "https://raw.githubusercontent.com/excalidraw/excalidraw/v0.18.1/LICENSE",
+    "sha256": "1352d204fdb90d5e482c13139d848bc2c9300a9a7de358a0a558a23e72d0d8be"
+  },
+  {
+    "file": "fonts/ComicShanns-upstream-notice.txt",
+    "url": "https://raw.githubusercontent.com/excalidraw/excalidraw/v0.18.1/packages/excalidraw/fonts/ComicShanns/index.ts",
+    "sha256": "599a5bef44586503ecbe89850e695e9de986307ef4ced4332728619f8b9f9718"
+  },
+  {
+    "file": "fonts/Excalifont-upstream-notice.txt",
+    "url": "https://raw.githubusercontent.com/excalidraw/excalidraw/v0.18.1/packages/excalidraw/fonts/Excalifont/index.ts",
+    "sha256": "463155f8b57907fd961f32d4941f590e3c037325c34fac94118c03ca3b67eabe"
+  },
+  {
+    "file": "fonts/Xiaolai-upstream-notice.txt",
+    "url": "https://raw.githubusercontent.com/excalidraw/excalidraw/v0.18.1/packages/excalidraw/fonts/Xiaolai/index.ts",
+    "sha256": "91b596a07331c438dabd2a66783eb818b9ac1ff9ee4069f008021f6f044fddb7"
+  },
+  {
+    "file": "fonts/Assistant-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/assistant/OFL.txt",
+    "sha256": "7eaf6282cfab122b99ffd62a122fc27b6c3c8f2c65b56ff9b3a25badbc64887d"
+  },
+  {
+    "file": "fonts/Lilita-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/lilitaone/OFL.txt",
+    "sha256": "255d5debbb80eb2ea762644311f266a279e8778f00156655a516e2b7781a63e1"
+  },
+  {
+    "file": "fonts/Nunito-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/nunito/OFL.txt",
+    "sha256": "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65"
+  },
+  {
+    "file": "fonts/Cascadia-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/microsoft/cascadia-code/main/LICENSE",
+    "sha256": "51882cd3cdba4e16f220f44ddb08a635c38c44ea6e0975db2574f4be6f958238"
+  },
+  {
+    "file": "fonts/Liberation-2.1.5-LICENSE.txt",
+    "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+    "downloadSha256": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+    "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
+  }
+]
