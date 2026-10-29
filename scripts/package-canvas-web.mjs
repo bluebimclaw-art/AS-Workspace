@@ -1,0 +1,8 @@
+import {readFile,writeFile,readdir,mkdir} from 'node:fs/promises';
+import path from 'node:path';import {createHash} from 'node:crypto';import JSZip from 'jszip';
+const root=path.resolve('public/canvas-web'),zip=new JSZip(),manifest=JSON.parse(await readFile(path.join(root,'platform-build.json'),'utf8'));
+if(manifest.id!=='infinite-canvas-company-0.8.0'||Object.keys(manifest.files).length<3)throw Error('Build Canvas first');
+for(const [name,sha]of Object.entries(manifest.files)){const p=path.resolve(root,name);if(!p.startsWith(root+path.sep)||createHash('sha256').update(await readFile(p)).digest('hex')!==sha)throw Error('Canvas asset hash mismatch');}
+async function add(dir,rel=''){for(const e of await readdir(dir,{withFileTypes:true})){if(e.isSymbolicLink())throw Error('Unexpected symlink');const name=path.posix.join(rel,e.name);if(e.isDirectory())await add(path.join(dir,e.name),name);else zip.file('canvas-web/'+name,await readFile(path.join(dir,e.name)));}}await add(root);
+await mkdir('release',{recursive:true});const archive='infinite-canvas-company-0.8.0-web.zip',bytes=await zip.generateAsync({type:'nodebuffer',compression:'DEFLATE'}),sha256=createHash('sha256').update(bytes).digest('hex');await writeFile('release/'+archive,bytes);await writeFile('release/'+archive+'.sha256',sha256+'  '+archive+'\n');
+await writeFile('config/canvas-web.json',JSON.stringify({id:manifest.id,archive,sha256,url:'https://github.com/ansonman/company-ai-platform-pilot/releases/download/v0.8.0/'+archive,sourceCommit:manifest.commit},null,2)+'\n');console.log(archive+' '+bytes.length+' bytes '+sha256);

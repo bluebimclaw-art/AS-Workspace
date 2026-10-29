@@ -1,0 +1,11 @@
+{
+  "platformUrl": "https://CENTRAL-PLATFORM-IP:4331/",
+  "caFile": "C:/AS-Workspace-Connector/ca.crt",
+  "token": "REPLACE_WITH_ADMIN_PAIRING_TOKEN",
+  "revit": {
+    "entry": "C:/Users/anson/ClaudeFile/revit-MCP/MCP-Server/build/index.js",
+    "port": 8964,
+    "expectedRevitYear": "2024",
+    "expectedMcpVersion": "1.0.0"
+  }
+}

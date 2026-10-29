@@ -1,0 +1,8 @@
+{
+  "tools": {
+    "pdfcraft": {"enabled": true, "timeoutMs": 120000},
+    "wordcraft": {"enabled": true, "timeoutMs": 120000},
+    "gridcraft": {"enabled": true, "timeoutMs": 120000},
+    "deckcraft": {"enabled": true, "timeoutMs": 120000}
+  }
+}

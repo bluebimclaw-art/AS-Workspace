@@ -1,0 +1,20 @@
+{
+  "profiles": [
+    {
+      "id": "gemini-image",
+      "label": "Gemini image — configure approved model before enabling",
+      "protocol": "gemini-interactions",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "model": "REPLACE_WITH_APPROVED_IMAGE_MODEL",
+      "models": [],
+      "capabilities": [
+        "image"
+      ],
+      "location": "cloud",
+      "inference": "cloud",
+      "enabled": false,
+      "apiKeyEnv": "GEMINI_API_KEY",
+      "timeoutMs": 120000
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+import path from 'node:path';import net from 'node:net';import {access} from 'node:fs/promises';import {CraftMcp,resultText} from './craft-mcp.mjs';
+const READ_TOOLS=['get_project_info','get_all_levels'];let busy=false;
+export class RevitConnector{
+ constructor(config={}){this.config=config;this.last=null;}
+ status(){return {configured:!!this.config.entry,expectedRevitYear:this.config.expectedRevitYear||null,expectedMcpVersion:this.config.expectedMcpVersion||'1.0.0',readOnly:true,writeEnabled:false,last:this.last};}
+ async probe(){if(busy)throw Object.assign(Error('Revit唯讀連線測試進行中'),{status:409});busy=true;let m;const result={at:new Date().toISOString(),mcpReady:false,revitConnected:false,readOnly:true,writeEnabled:false,actualRevitYear:null,warnings:[]};try{
+  const {entry,expectedRevitYear,expectedMcpVersion='1.0.0',port=8964}=this.config;if(!entry||!path.isAbsolute(entry)||!entry.endsWith('.js')||!Number.isInteger(port)||port<1024||port>65535)throw Error('請在平台伺服器設定本機Revit MCP entry及端口');await access(entry);
+  m=new CraftMcp(process.execPath,[entry],{cwd:path.dirname(entry),timeoutMs:15000,env:{REVIT_MCP_PORT:String(port)}});const hello=await m.request('initialize',{protocolVersion:'2025-03-26',capabilities:{},clientInfo:{name:'as-workspace-readonly',version:'0.9.0'}});m.child.stdin.write(JSON.stringify({jsonrpc:'2.0',method:'notifications/initialized'})+'\n');const list=await m.request('tools/list');result.mcpReady=true;result.server={name:hello.serverInfo?.name||'unknown',version:hello.serverInfo?.version||'unknown'};result.readTools=READ_TOOLS.filter(name=>list.tools?.some(t=>t.name===name));
+  if(result.server.version!==expectedMcpVersion){result.warnings.push('MCP server版本不符，停止模型查詢；所有寫入維持關閉');result.status='version-mismatch';return this.last=result;}
+  if(!result.readTools.includes('get_project_info'))throw Error('MCP未提供已批准的唯讀專案查詢');
+  await new Promise((resolve,reject)=>{const s=net.connect({host:'localhost',port});s.setTimeout(2000);s.once('connect',()=>{s.destroy();resolve();});s.once('timeout',()=>{s.destroy();reject(Error('Revit MCP端口連線逾時'));});s.once('error',()=>reject(Error('Revit已開啟但MCP端口未就緒，請檢查Revit內MCP啟動狀態')));});
+  const info=JSON.parse(resultText(await m.call('get_project_info',{})));result.revitConnected=true;result.project={name:String(info.ProjectName||info.projectName||'未提供').slice(0,200)};result.actualRevitYear=String(info.RevitVersion||info.revitVersion||'').match(/20\d{2}/)?.[0]||null;
+  if(result.actualRevitYear&&expectedRevitYear&&String(expectedRevitYear)!==result.actualRevitYear){result.status='version-mismatch';result.warnings.push('Revit年份不符，停止後續查詢，寫入維持關閉');return this.last=result;}
+  if(!result.actualRevitYear)result.warnings.push('現有get_project_info未回報Revit／已載入add-in版本，版本相容性未完成驗證，寫入保持關閉');
+  if(result.readTools.includes('get_all_levels')){const levels=JSON.parse(resultText(await m.call('get_all_levels',{})));result.levels={count:levels.Count??levels.Levels?.length??null,items:(levels.Levels||[]).slice(0,100).map(l=>({name:String(l.Name||'').slice(0,100),elevationMm:l.Elevation}))};}result.status='connected-readonly';return this.last=result;
+ }catch(e){result.status=result.mcpReady?'revit-unavailable':'mcp-unavailable';result.error=e.message.includes('ENOENT')?'MCP entry不存在；請設定已安裝本機server路徑':e.message.slice(0,300);return this.last=result;}finally{m?.close();busy=false;}}
+}
+export function revitConfig(env=process.env){return {entry:env.POC_REVIT_MCP_ENTRY||'',port:Number(env.POC_REVIT_MCP_PORT||8964),expectedRevitYear:env.POC_REVIT_EXPECTED_YEAR||'2024',expectedMcpVersion:env.POC_REVIT_EXPECTED_MCP_VERSION||'1.0.0'};}

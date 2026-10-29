@@ -1,0 +1,29 @@
+[
+  {
+    "id": "wordcraft",
+    "version": "0.10.0-host1",
+    "folder": "wordcraft-web-0.10.0-host1",
+    "archive": "wordcraft-web-0.10.0-host1.zip",
+    "wasmBytes": 66794566,
+    "sha256": "040845f17f16c4069b27f60317fdac9da32d3ae7ca00e0535dc8bf7e9cf5422f",
+    "url": "https://github.com/ansonman/company-ai-platform-pilot/releases/download/v0.5.0/wordcraft-web-0.10.0-host1.zip"
+  },
+  {
+    "id": "pdfcraft",
+    "version": "0.13.0-cjk1",
+    "folder": "pdfcraft-web-0.13.0-cjk1",
+    "archive": "pdfcraft-web-0.13.0-cjk1.zip",
+    "wasmBytes": 62576830,
+    "sha256": "dc53cd901dd93c7a4eef352b55c0de86741b71ff5d1be91ce04511aa706fa83b",
+    "url": "https://github.com/ansonman/company-ai-platform-pilot/releases/download/v0.5.0/pdfcraft-web-0.13.0-cjk1.zip"
+  },
+  {
+    "id": "deckcraft",
+    "version": "0.10.0-host1",
+    "folder": "deckcraft-web-0.10.0-host1",
+    "archive": "deckcraft-web-0.10.0-host1.zip",
+    "wasmBytes": 50556784,
+    "sha256": "c35a9e1e137fef627e601228d7a4bf2050c1af3def6a1e1b841e39afb0fc9e43",
+    "url": "https://github.com/ansonman/company-ai-platform-pilot/releases/download/v0.6.0/deckcraft-web-0.10.0-host1.zip"
+  }
+]

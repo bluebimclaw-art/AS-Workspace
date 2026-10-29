@@ -1,0 +1,46 @@
+{
+  "profiles": [
+    {
+      "id": "ollama",
+      "label": "Mac / Windows Ollama",
+      "location": "local",
+      "protocol": "ollama",
+      "baseUrl": "http://127.0.0.1:11434",
+      "models": [],
+      "timeoutMs": 180000
+    },
+    {
+      "id": "local-api",
+      "label": "地端 OpenAI-compatible 模型",
+      "location": "local",
+      "protocol": "openai-compatible",
+      "baseUrl": "http://127.0.0.1:8080/v1",
+      "models": [],
+      "apiKeyEnv": "POC_LOCAL_API_KEY",
+      "timeoutMs": 180000
+    },
+    {
+      "id": "hermes",
+      "label": "Hermes Agent API（雲端／混合）",
+      "location": "cloud",
+      "protocol": "hermes",
+      "baseUrl": "http://127.0.0.1:8642/v1",
+      "models": [],
+      "apiKeyEnv": "POC_HERMES_API_KEY",
+      "timeoutMs": 600000,
+      "enabled": false,
+      "inference": "mixed",
+      "connectionScope": "loopback"
+    },
+    {
+      "id": "approved-cloud",
+      "label": "批准雲端服務",
+      "location": "cloud",
+      "protocol": "openai-compatible",
+      "baseUrl": "",
+      "models": [],
+      "apiKeyEnv": "POC_CLOUD_API_KEY",
+      "timeoutMs": 120000
+    }
+  ]
+}

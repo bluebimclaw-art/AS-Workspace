@@ -1,0 +1,87 @@
+[
+  {
+    "id": "pdfcraft",
+    "label": "PdfCraft",
+    "version": "0.4.0",
+    "capabilities": [
+      "pdfcraft.inspect",
+      "pdfcraft.merge",
+      "pdfcraft.extract",
+      "chat.readonly"
+    ]
+  },
+  {
+    "id": "wordcraft",
+    "label": "WordCraft",
+    "version": "0.4.0",
+    "capabilities": [
+      "wordcraft.create",
+      "chat.readonly"
+    ]
+  },
+  {
+    "id": "gridcraft",
+    "label": "GridCraft",
+    "version": "0.4.0",
+    "capabilities": [
+      "gridcraft.web",
+      "project.open",
+      "project.save.version",
+      "gridcraft.index.partial",
+      "chat.readonly"
+    ]
+  },
+  {
+    "id": "deckcraft",
+    "label": "DeckCraft（試驗）",
+    "version": "0.4.0",
+    "capabilities": [
+      "deckcraft.create.experimental",
+      "chat.readonly"
+    ]
+  },
+  {
+    "id": "board",
+    "label": "Excalidraw",
+    "version": "0.4.0",
+    "capabilities": [
+      "board.save",
+      "board.read",
+      "chat.readonly"
+    ]
+  },
+  {
+    "id": "files",
+    "label": "項目檔案",
+    "version": "0.4.0",
+    "capabilities": [
+      "project.import",
+      "project.version",
+      "project.restore",
+      "chat.readonly"
+    ]
+  },
+  {
+    "id": "search",
+    "label": "搜尋",
+    "version": "0.4.0",
+    "capabilities": [
+      "search.keyword",
+      "pdf.parse.local",
+      "search.page-citation",
+      "chat.readonly"
+    ]
+  },
+  {
+    "id": "jobs",
+    "label": "AI 任務",
+    "version": "0.4.0",
+    "capabilities": [
+      "auth.login",
+      "role.enforce",
+      "edit.lease",
+      "ai.queue.fifo",
+      "ai.job.cancel.queued"
+    ]
+  }
+]

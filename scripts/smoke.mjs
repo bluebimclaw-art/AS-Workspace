@@ -1,0 +1,12 @@
+import {writeFile,mkdir} from 'node:fs/promises';
+const base='http://127.0.0.1:4317';
+const request=async(url,body)=>{const r=await fetch(base+'/api/'+url,body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{});if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();};
+const a=await request('assets',{name:'實測_接待區需求.txt',text:'接待區必須保留原入口。方案報告需引用來源。測試代碼 POC-SHARED-001。價格未提供。'});
+const d=await request('documents',{title:'接待區方案匯報（驗證樣本）',body:'接待區必須保留原入口。\n測試代碼 POC-SHARED-001。\n價格未提供，待公司核價。',sourceIds:[a.id]});
+const b=await request('boards',{name:'接待區討論白板（驗證樣本）',elements:[{id:'source-note',type:'text',x:80,y:80,width:500,height:120,angle:0,strokeColor:'#1e1e1e',backgroundColor:'transparent',fillStyle:'solid',strokeWidth:1,strokeStyle:'solid',roughness:1,opacity:100,groupIds:[],frameId:null,index:'a0',roundness:null,seed:123,version:1,versionNonce:123,isDeleted:false,boundElements:null,updated:Date.now(),link:null,locked:false,text:'接待區保留入口\nPOC-SHARED-001\n方案待確認',originalText:'接待區保留入口\nPOC-SHARED-001\n方案待確認',fontSize:24,fontFamily:3,textAlign:'left',verticalAlign:'top',containerId:null,autoResize:true,lineHeight:1.25,customData:{assetId:a.id,assetVersion:a.version}}],sourceIds:[a.id]});
+const results=await request('search?q=POC-SHARED-001');
+if(!['asset','document','board'].every(t=>results.some(r=>r.type===t&&r.sources[0].assetId===a.id)))throw new Error('Cross-module source identity verification failed');
+const docx=await fetch(base+`/api/documents/${d.id}/docx`);if(!docx.ok)throw new Error('DOCX export failed');
+await mkdir('evidence',{recursive:true});await writeFile('evidence/live-api-report.docx',Buffer.from(await docx.arrayBuffer()));
+const evidence={timestamp:new Date().toISOString(),testKind:'REAL local HTTP API; not browser UI or live AI',asset:a,document:d,board:b,searchResults:results,checks:{sharedSourceIdentity:true,threeSearchTypes:true,docxDownloaded:true}};
+await writeFile('evidence/live-api-smoke.json',JSON.stringify(evidence,null,2));console.log('LIVE API PASS: asset → document + board → search (3 types) → DOCX download; stable asset ID throughout');

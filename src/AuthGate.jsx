@@ -1,0 +1,12 @@
+import React,{useState,useEffect} from 'react';
+import Workbench from './Workbench.jsx';
+import {api,setCsrf} from './client.mjs';
+export default function AuthGate(){
+ const [identity,setIdentity]=useState(null),[loading,setLoading]=useState(true),[expired,setExpired]=useState(false),[username,setUsername]=useState(''),[password,setPassword]=useState(''),[error,setError]=useState(''),[busy,setBusy]=useState(false);
+ useEffect(()=>{fetch('/api/auth/me').then(async r=>{const d=await r.json();if(r.ok){setCsrf(d.csrf);setIdentity(d);}else if(r.status!==401)setError(d.error);}).catch(e=>setError(e.message)).finally(()=>setLoading(false));const expire=()=>{setExpired(true);setError('登入已過期。編輯器內容會保留；請以同一帳戶重新登入後重試儲存。');};window.addEventListener('trial-auth-required',expire);return()=>window.removeEventListener('trial-auth-required',expire);},[]);
+ async function login(e){e.preventDefault();setBusy(true);setError('');try{if(identity&&username.toLowerCase()!==identity.user.username)throw new Error('請用同一帳戶重新登入，以保留目前修改；換帳戶前先保存及登出。');const r=await fetch('/api/auth/login',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({username,password})}),d=await r.json();if(!r.ok)throw new Error(d.error);setPassword('');if(identity&&identity.user.id!==d.user.id){location.reload();return;}setCsrf(d.csrf);setIdentity(d);setExpired(false);}catch(e){setError(e.message);}finally{setBusy(false);}}
+ async function logout(){const event=new Event('trial-before-logout',{cancelable:true});if(!window.dispatchEvent(event))return;try{await api('auth/logout',{});location.reload();}catch(e){setError(e.message);}}
+ if(loading)return <p className="loading">正在核對登入狀態…</p>;
+ return <>{identity&&<Workbench user={identity.user} logout={logout}/>} {(!identity||expired)&&<div className="login-overlay"><form className="login-card" onSubmit={login}><div className="brand">AS Workspace</div><h1>AS Workspace 登入</h1><p>{expired?'重新登入可繼續目前工作。':'使用公司試點帳戶登入。首次部署請由管理員在伺服器建立帳戶。'}</p><label>帳戶<input autoComplete="username" required value={username} onChange={e=>setUsername(e.target.value)}/></label><label>密碼<input type="password" autoComplete="current-password" required value={password} onChange={e=>setPassword(e.target.value)}/></label>{error&&<p role="alert" className="notice">{error}</p>}<button className="primary" disabled={busy}>{busy?'登入中…':'登入'}</button><small>項目與功能由管理員授權；個人 AI 對話分開保存。</small></form></div>}</>;
+}
+

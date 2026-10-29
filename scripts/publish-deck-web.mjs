@@ -1,0 +1,16 @@
+import {mkdir,readFile,writeFile,readdir,copyFile} from 'node:fs/promises';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {gzipSync} from 'node:zlib';
+import JSZip from 'jszip';
+const root=path.resolve(import.meta.dirname,'..'),commit='b47195feec0f0fe4220d8943ad1c8add5dad8072',source=path.join(root,'tools/office-web-build/deck-source/deckcraft-'+commit),built=path.join(source,'dist/web'),folder='deckcraft-web-0.10.0-host1',dest=path.join(root,'public/office',folder);
+await mkdir(dest,{recursive:true});const names=(await readdir(built)).filter(n=>/\.(html|js|wasm|ico|png)$/.test(n));if(!names.includes('index.html')||names.filter(n=>n.endsWith('.wasm')).length!==1)throw Error('Incomplete Deck Web build');
+for(const n of names)await copyFile(path.join(built,n),path.join(dest,n));
+for(const n of ['LICENSE-MIT','LICENSE-APACHE','NOTICE','ATTRIBUTION.md'])await copyFile(path.join(source,n),path.join(dest,n));
+for(const family of ['biz-ud-pgothic','lxgw-wenkai-tc'])await copyFile(path.join(root,'tools/office-web-build/pdf-fonts/fonts',family,'OFL.txt'),path.join(dest,family+'-OFL.txt'));
+const hash=b=>createHash('sha256').update(b).digest('hex');for(const n of names.filter(n=>/\.(wasm|js)$/.test(n)))await writeFile(path.join(dest,n+'.gz'),gzipSync(await readFile(path.join(dest,n)),{level:9}));
+const wasm=await readFile(path.join(dest,names.find(n=>n.endsWith('.wasm'))));if(!WebAssembly.validate(wasm))throw Error('Invalid Deck WASM');
+const manifest={id:'deckcraft',version:'0.10.0-host1',sourceCommit:commit,sourceArchiveSha256:'07862101d20d91a48d6abbee73fc4d9bd0427e55b60cf1ad064e2637533995a7',patch:'scripts/patch-deck-web.mjs',bridge:'vendor/deckcraft/platform_host.rs',fontSources:['storytold/craft-fonts@fff559f5f038112a4135e95c720161d4d0a5b335','lxgw/LxgwWenkaiTC@v1.530'],rust:'1.99.1',trunk:'0.22.0',files:{}};
+for(const n of(await readdir(dest)).filter(n=>n!=='platform-build.json'))manifest.files[n]=hash(await readFile(path.join(dest,n)));await writeFile(path.join(dest,'platform-build.json'),JSON.stringify(manifest,null,2)+'\n');
+const zip=new JSZip();for(const n of await readdir(dest))zip.file(folder+'/'+n,await readFile(path.join(dest,n)));const bytes=await zip.generateAsync({type:'nodebuffer',compression:'DEFLATE'}),archive=folder+'.zip';await mkdir('release',{recursive:true});await writeFile(path.join(root,'release',archive),bytes);
+const configFile=path.join(root,'config/office-web.json'),config=JSON.parse(await readFile(configFile,'utf8')).filter(x=>x.id!=='deckcraft');config.push({id:'deckcraft',version:'0.10.0-host1',folder,archive,wasmBytes:wasm.length,sha256:hash(bytes),url:'https://github.com/ansonman/company-ai-platform-pilot/releases/download/v0.6.0/'+archive});await writeFile(configFile,JSON.stringify(config,null,2)+'\n');console.log(JSON.stringify(config.at(-1)));

@@ -1,0 +1,6 @@
+{
+  "profiles": [
+    {"id":"ollama-local","label":"Mac mini Ollama（模型已下載，推理待驗證）","location":"local","inference":"local","protocol":"ollama","baseUrl":"http://127.0.0.1:11434","models":["gpt-oss:20b","gpt-oss:20b-64k"],"timeoutMs":180000},
+    {"id":"hermes-ai-bim","label":"Hermes AI BIM（雲端預設，暫停用）","enabled":false,"location":"cloud","inference":"mixed","protocol":"openai-compatible","baseUrl":"http://192.168.50.71:8643/v1","models":["ai-bim"],"apiKeyEnv":"POC_HERMES_API_KEY","timeoutMs":600000}
+  ]
+}

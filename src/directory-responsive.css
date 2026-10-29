@@ -1,0 +1,8 @@
+/* Directory-only responsive controls: never alter editor toolbars or source permissions. */
+.directory-search .searchform { flex-wrap: wrap; }
+.directory-search .searchform > input { flex: 1 1 260px; min-width: 0; }
+.directory-search .searchform > select,
+.directory-search .searchform > button { flex: 0 0 auto; white-space: nowrap; max-width: 100%; }
+@media (max-width: 900px) {
+  .directory-search .searchform > input { flex-basis: 100%; width: 100%; }
+}
